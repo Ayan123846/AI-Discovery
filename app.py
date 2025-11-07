@@ -57,9 +57,9 @@ def home():
         ]
         heading = f"Found {len(display_tools)} results for \"{search_query}\""
     else:
-        # ** MODIFIED: Show all tools on homepage, not just 3 **
-        display_tools = all_tools_sorted
-        heading = "Today's Top AI Tools"
+        # ** THIS IS THE FIX: Changed to all_tools_sorted[:3] **
+        display_tools = all_tools_sorted[:3]
+        heading = "Today's Top 3 AI Tools"
     
     all_tools_json = json.dumps(all_tools)
     
@@ -286,7 +286,7 @@ def vote(tool_id):
         tool_to_vote['voted_by'].remove(username)
         voted = False
     else:
-        tool_to_vote['upvotes'] += 1
+        tool_to__vote['upvotes'] += 1
         tool_to_vote['voted_by'].append(username)
         voted = True
         
