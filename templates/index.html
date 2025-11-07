@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block title %}AI Discover{% endblock %}
+
+{% block scripts %}
+<script id="all-tools-data" type="application/json">
+    {{ all_tools_json|safe }}
+</script>
+{% endblock %}
+
+
+{% block content %}
+<header class="hero">
+    <div class="container">
+        <div class="hero-title-container">
+            <h1>Discover the Best<br>AI Tools Daily</h1>
+        </div>
+        <p class="subtitle">Vote for tomorrow's top AI tools and discover the most innovative applications chosen by our community.</p>
+        
+        <form action="/" method="GET" class="search-form-container" id="hero-search-container">
+            <div class="search-form">
+                <i data-feather="search" class="search-icon"></i>
+                <input type="search" name="search" id="search-input" placeholder="Search AI tools by name or category..." value="{{ search_query or '' }}" autocomplete="off">
+                <button type="submit" class="search-submit-btn">Search</button>
+            </div>
+            <div class="search-suggestions" id="search-suggestions">
+                </div>
+        </form>
+
+        {% if not search_query %}
+        <a href="#ai-feature-section-anchor" class="scroll-down-arrow">
+            <span>Learn More</span>
+            <i data-feather="arrow-down"></i>
+        </a>
+        {% endif %}
+        </div>
+</header>
+
+{% if not search_query %}
+<div id="ai-feature-section-anchor"></div>
+
+<section class="ai-feature-section">
+    <div class="container sticky-container">
+        
+        <div class="text-content">
+            <div class="text-block" data-image-id="ai-img-discover">
+                <h2>Discover.</h2>
+                <p>Find the best tools for any task. Our community votes on the latest and greatest, so you always see what's trending and powerful.</p>
+            </div>
+            <div class="text-block" data-image-id="ai-img-compare">
+                <h2>Compare.</h2>
+                <p>See what the community *really* thinks. Read authentic user reviews, check ratings, and compare features before you commit to a new tool.</p>
+            </div>
+            <div class="text-block" data-image-id="ai-img-grow">
+                <h2>Grow.</h2>
+                <p>Submit your own creations. Get feedback, find your first users, and join the next generation of AI builders on a level playing field.</p>
+            </div>
+        </div>
+        
+        <div class="image-panel">
+            <div class="image-card active" id="ai-img-discover" style="background-image: url('{{ url_for('static', filename='images/discover.jpg') }}'); background-color: 0;">
+            </div>
+            <div class="image-card" id="ai-img-compare" style="background-image: url('{{ url_for('static', filename='images/compare.png') }}'); background-color: 0;">
+            </div>
+            <div class="image-card" id="ai-img-grow" style="background-image: url('{{ url_for('static', filename='images/grow.png') }}'); background-color: 0;">
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endif %}
+<div class="container page-content" id="main-content-anchor">
+    
+    <div class="main-column">
+        <h2>{{ heading }}</h2>
+        
+        <div class="tool-list">
+            
+            {% if not tools %}
+                <div class="tool-card reveal-on-scroll">
+                    <p>No tools found matching your search. Try another query!</p>
+                </div>
+            {% endif %}
+
+            {% for tool in tools %}
+            <div class="tool-card reveal-on-scroll">
+                <a href="{{ url_for('ai_detail', tool_id=tool.id) }}" class="card-main-link">
+                    <div class="tool-icon">
+                        
+                        {% if tool.logo_url.startswith('http') %}
+                            <img src="{{ tool.logo_url }}" 
+                                 alt="{{ tool.name }} logo" 
+                                 class="tool-logo"
+                                 onerror="this.onerror=null; this.src='{{ url_for('static', filename='images/pp.png') }}';">
+                        {% else %}
+                            <img src="{{ url_for('static', filename=tool.logo_url.replace('/static/', '')) }}" 
+                                 alt="{{ tool.name }} logo" 
+                                 class="tool-logo">
+                        {% endif %}
+                        
+                    </div>
+                    <div class="tool-info">
+                        <h3>{{ tool.name }}</h3>
+                        <p>{{ tool.description }}</p>
+                        <span class="tool-category">{{ tool.category }}</span>
+                    </div>
+                </a>
+                <div class="tool-vote">
+                    <button class="vote-button {% if session.username and session.username in tool.voted_by %}voted{% endif %}" 
+                            data-tool-id="{{ tool.id }}"
+                            {% if not session.username %}disabled title="Log in to vote"{% endif %}>
+                        <i data-feather="chevron-up"></i>
+                        <span class="vote-count">{{ tool.upvotes }}</span>
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="sidebar-column reveal-on-scroll">
+        <div class="sidebar-widget">
+            <h3>Want to get featured?</h3>
+            <p>Submit your own AI tool to the community. It's free!</p>
+            <a href="{{ url_for('submit_page') }}" class="submit-button-widget">Submit Your AI</a>
+        </div>
+        <div class="sidebar-widget">
+            <h3>Newsletter</h3>
+            <p>Get the top AI tools delivered to your inbox weekly.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="your.email@example.com">
+                <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

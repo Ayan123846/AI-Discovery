@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}AI News{% endblock %}
+
+{% block content %}
+<div class="container page-content-single">
+    <div class="content-container reveal-on-scroll">
+         {% include '_back_button.html' %} 
+
+        <h2>Latest AI News</h2>
+        <p class="subtitle">Stay updated with the latest breakthroughs and stories in the world of AI.</p>
+        
+        <div class="article-list">
+            <div class="article-card">
+                <h3>New Multimodal Model "Symphony" Announced</h3>
+                <p>A new startup today unveiled "Symphony," a model that can reportedly compose music, write screenplays, and generate video from a single text prompt. Analysts are cautiously optimistic...</p>
+                <span class="article-meta">Posted: Nov 6, 2025 | Category: Breakthroughs</span>
+            </div>
+
+            <div class="article-card">
+                <h3>AI in Healthcare: Study Shows 99% Accuracy in Early Detection</h3>
+                <p>A 5-year study concluded that a new AI diagnostic tool successfully identified early-stage cancers with 99% accuracy, far surpassing human radiologists. Regulatory approval is pending...</p>
+                <span class="article-meta">Posted: Nov 5, 2025 | Category: Healthcare</span>
+            </div>
+
+            <div class="article-card">
+                <h3>Open-Source AI Coding Assistant "DevMate" Challenges Copilot</h3>
+                <p>A community-driven project, "DevMate," has just released its 1.0 version. It's a free, open-source coding assistant that runs locally on your machine, promising better privacy and customization...</p>
+                <span class="article-meta">Posted: Nov 4, 2025 | Category: Open Source</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

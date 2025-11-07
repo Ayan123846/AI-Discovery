@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Submit Your AI{% endblock %}
+
+{% block content %}
+<div class="container page-content-single">
+    <div class="form-container reveal-on-scroll">
+        {% include '_back_button.html' %}
+        
+        <h2>Submit Your AI Tool</h2>
+        <p>Share your creation with the community. Submissions will be reviewed before appearing on the site.</p>
+        
+        <form action="{{ url_for('submit_page') }}" method="POST">
+            <div class="form-group">
+                <label for="ai-name">Name of your AI</label>
+                <input type="text" id="ai-name" name="ai-name" placeholder="e.g., AI Wiz" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="ai-url">Website URL</label>
+                <input type="url" id="ai-url" name="ai-url" placeholder="https://www.myaitool.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ai-pricing">Pricing</label>
+                <select id="ai-pricing" name="ai-pricing" required>
+                    <option value="Free">Free</option>
+                    <option value="Freemium">Freemium (Free & Paid)</option>
+                    <option value="Paid">Paid</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="ai-team">CEO or Team Members (Optional)</label>
+                <input type="text" id="ai-team" name="ai-team" placeholder="e.g., Sam Altman, Greg Brockman">
+                <small>Separate names with a comma.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="ai-category">Category</label>
+                <select id="ai-category" name="ai-category" required>
+                    <option value="" disabled selected>Select a category...</option>
+                    <option value="Chatbot">Chatbot</option>
+                    <option value="Image">Image</option>
+                    <option value="Video">Video</option>
+                    <option value="Audio">Audio</option>
+                    <option value="Code">Code</option>
+                    <option value="Search">Search</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="ai-description">Short Description (max 150 chars)</label>
+                <textarea id="ai-description" name="ai-description" rows="3" placeholder="A one-sentence tagline..." required maxlength="150"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="ai-long-description">Full Description (Optional)</label>
+                <textarea id="ai-long-description" name="ai-long-description" rows="6" placeholder="A detailed paragraph about your AI..."></textarea>
+                <small>If left blank, the short description will be used.</small>
+            </div>
+            
+            <button type="submit" class="submit-button">Submit for Review</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

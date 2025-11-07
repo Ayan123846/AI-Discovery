@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}{{ tool.name }} - AI Discovery{% endblock %}
+
+{% block content %}
+<div class="container page-content-single">
+    
+    <a href="javascript:history.back()" class="back-link reveal-on-scroll">
+        <i data-feather="arrow-left"></i>
+        <span>Back</span>
+    </a>
+
+    <div class="detail-header reveal-on-scroll">
+        <div class="detail-header-main">
+
+            {% if tool.logo_url.startswith('http') %}
+                <img src="{{ tool.logo_url }}" 
+                     alt="{{ tool.name }} logo" 
+                     class="detail-logo"
+                     onerror="this.onerror=null; this.src='{{ url_for('static', filename='images/pp.png') }}';">
+            {% else %}
+                <img src="{{ url_for('static', filename=tool.logo_url.replace('/static/', '')) }}" 
+                     alt="{{ tool.name }} logo" 
+                     class="detail-logo">
+            {% endif %}
+
+            <div class="detail-title">
+                <h1>{{ tool.name }}</h1>
+                <span class="pricing-tag {{ tool.pricing|lower }}">{{ tool.pricing }}</span>
+            </div>
+        </div>
+        <div class="detail-actions">
+            <button class="vote-button {% if session.username and session.username in tool.voted_by %}voted{% endif %}" 
+                    data-tool-id="{{ tool.id }}"
+                    {% if not session.username %}disabled title="Log in to vote"{% endif %}>
+                <i data-feather="chevron-up"></i>
+                <span class="vote-count">{{ tool.upvotes }}</span>
+            </button>
+            <a href="{{ tool.url }}" class="submit-button" target="_blank" rel="noopener noreferrer">
+                <span>Visit Site</span>
+                <i data-feather="external-link"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="team-section reveal-on-scroll">
+        <h4><i data-feather="users"></i> Team Members</h4>
+        <div class="team-members-list">
+            {% for member in tool.ceo_team %}
+                <span class="team-member">{{ member }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="detail-description reveal-on-scroll">
+        <h3>Description</h3>
+        <p>{{ tool.long_description }}</p>
+    </div>
+
+    <div class="reviews-section reveal-on-scroll">
+        <h2>Reviews & Comments</h2>
+
+        {% if session.username %}
+        <form action="{{ url_for('add_review', tool_id=tool.id) }}" method="POST" class="review-form">
+            <h3>Add Your Review</h3>
+            <div class="form-group">
+                <label>Your Rating</label>
+                <div class="star-rating-input">
+                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars"><i data-feather="star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars"><i data-feather="star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars"><i data-feather="star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars"><i data-feather="star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star"><i data-feather="star"></i></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Your Comment</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="What do you think of this AI?" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit Review</button>
+        </form>
+        {% else %}
+        <div class="review-login-prompt">
+            <p>Please&nbsp; <a href="{{ url_for('login') }}">Sign In</a> to add your review.</p>
+        </div>
+        {% endif %}
+
+        <div class="reviews-list">
+            {% if not tool.reviews %}
+                <p>No reviews yet. Be the first!</p>
+            {% else %}
+                {% for review in tool.reviews|reverse %}
+                <div class="review-card">
+                    <div class="review-card-header">
+                        <img src="{{ url_for('static', filename='images/pp.png') }}" alt="Profile" class="profile-avatar-small">
+                        <span class="review-username">{{ review.username }}</span>
+                        <div class="star-rating-display">
+                            {% for i in range(5) %}
+                                <i data-feather="star" class="{% if (i+1) <= review.rating %}filled{% endif %}"></i>
+                            {% endfor %}
+                        </div>
+                        <span class="review-date">{{ review.date }}</span>
+                    </div>
+                    <p class="review-comment">{{ review.comment }}</p>
+                </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

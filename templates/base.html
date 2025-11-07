@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}AI Tool Hunt{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">🚀 AI Discovery</a>
+            <div class="nav-links">
+                <a href="{{ url_for('news') }}" class="button-89" role="button">News</a>
+                <a href="{{ url_for('tournament') }}" class="button-89" role="button">Tournament</a>
+                
+                <a href="{{ url_for('submit_page') }}" class="button-85" role="button">Submit AI</a>
+                
+                {% if session.username %}
+                <div class="profile-menu">
+                    <button class="button-86 profile-toggle" id="profile-toggle-btn" role="button">
+                        <img src="{{ url_for('static', filename='images/pp.png') }}" alt="Profile" class="profile-avatar">
+                        <span>{{ session.username }}</span>
+                        <i data-feather="chevron-down" class="chevron-icon"></i>
+                    </button>
+                    <div class="profile-dropdown" id="profile-dropdown-menu">
+                        <a href="{{ url_for('logout') }}" class="logout-link">
+                            <i data-feather="log-out"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+                {% else %}
+                    <a href="{{ url_for('login') }}" class="nav-button-login" role="button">Sign In</a>
+                    <a href="{{ url_for('signup') }}" class="button-55" role="button">Sign Up</a>
+                {% endif %}
+                
+                <label class="theme-slider" for="theme-slider-checkbox" id="theme-slider-label">
+                    <input type="checkbox" id="theme-slider-checkbox">
+                    <span class="slider-knob">
+                        <i data-feather="moon" class="theme-icon-dark"></i>
+                        <i data-feather="sun" class="theme-icon-light"></i>
+                    </span>
+                </label>
+                
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages-container" id="flash-container">
+                    {% for category, message in messages %}
+                        <div class="flash-message flash-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AI Discovery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    {% block scripts %}
+    {% endblock %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
