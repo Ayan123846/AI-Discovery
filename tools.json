@@ -1,0 +1,819 @@
+[
+    {
+        "id": 1,
+        "name": "Google Gemini",
+        "description": "Google's next-generation, natively multimodal AI model.",
+        "long_description": "Gemini is Google's most capable AI model yet. As a natively multimodal model, it can reason seamlessly across text, images, video, audio, and code. It comes in three sizes\u2014Ultra, Pro, and Nano\u2014allowing it to run on everything from data centers to mobile devices.",
+        "category": "Chatbot",
+        "upvotes": 1,
+        "url": "https://gemini.google.com/",
+        "voted_by": [
+            "ayan"
+        ],
+        "logo_url": "https://logo.clearbit.com/google.com",
+        "ceo_team": [
+            "Sundar Pichai",
+            "Demis Hassabis"
+        ],
+        "pricing": "Freemium",
+        "reviews": [
+            {
+                "username": "ayan",
+                "rating": 5,
+                "comment": "this is excellent !!",
+                "date": "11/07/2025"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "ChatGPT",
+        "description": "OpenAI's popular generative AI chatbot that can write, code, and more.",
+        "long_description": "ChatGPT, developed by OpenAI, is a large language model built on the GPT architecture. It excels at generating human-like text, answering questions, writing code, creating content, and engaging in complex conversations. It's widely used for tasks ranging from content creation to customer support.",
+        "category": "Chatbot",
+        "upvotes": 0,
+        "url": "https://chat.openai.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/openai.com",
+        "ceo_team": [
+            "Sam Altman",
+            "Greg Brockman",
+            "Ilya Sutskever"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 3,
+        "name": "DeepSeek",
+        "description": "An open-source LLM for code generation, excelling at various benchmarks.",
+        "long_description": "DeepSeek is a family of AI models focused on code and text generation, developed by DeepSeek AI. Their models, particularly DeepSeek Coder, have shown exceptional performance on programming benchmarks, often outperforming other open-source models in code completion and generation tasks.",
+        "category": "Code",
+        "upvotes": 0,
+        "url": "https://deepseek.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/deepseek.com",
+        "ceo_team": [
+            "DeepSeek AI"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 4,
+        "name": "Midjourney",
+        "description": "An independent research lab that produces a proprietary AI image generator.",
+        "long_description": "Midjourney is an independent research lab that produces a proprietary artificial intelligence program that creates images from textual descriptions. It is accessible via a Discord bot, where users can generate stunning, artistic, and often surreal images using natural language prompts.",
+        "category": "Image",
+        "upvotes": 0,
+        "url": "https://www.midjourney.com/",
+        "voted_by": [
+            "admin"
+        ],
+        "logo_url": "https://logo.clearbit.com/midjourney.com",
+        "ceo_team": [
+            "David Holz"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 5,
+        "name": "Sora",
+        "description": "OpenAI's text-to-video model that can generate high-fidelity videos.",
+        "long_description": "Sora is an AI model from OpenAI that can create realistic and imaginative video scenes from text instructions. It is capable of generating high-definition videos up to a minute long, complete with complex camera motion and multiple characters, representing a significant leap in AI video generation.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://openai.com/sora",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/openai.com",
+        "ceo_team": [
+            "Sam Altman"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 6,
+        "name": "Perplexity AI",
+        "description": "An AI-powered search engine that provides direct answers with citations.",
+        "long_description": "Perplexity AI is a conversational search engine that answers queries directly using information from the web and provides citations for its answers. It's designed to be a more accurate and reliable alternative to traditional search engines by synthesizing information and showing its sources.",
+        "category": "Search",
+        "upvotes": 0,
+        "url": "https://www.perplexity.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/perplexity.ai",
+        "ceo_team": [
+            "Aravind Srinivas"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 7,
+        "name": "GitHub Copilot",
+        "description": "Your AI pair programmer that offers autocomplete-style code suggestions.",
+        "long_description": "GitHub Copilot is an AI-powered code completion tool developed by GitHub and OpenAI. It integrates directly into your code editor (like VS Code) and provides suggestions for whole lines or blocks of code as you type, significantly speeding up the development process.",
+        "category": "Code",
+        "upvotes": 0,
+        "url": "https://github.com/features/copilot",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/github.com",
+        "ceo_team": [
+            "Thomas Dohmke (GitHub)"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 8,
+        "name": "Claude",
+        "description": "A family of foundational AI models from Anthropic, focused on safety.",
+        "long_description": "Claude is a family of large language models developed by Anthropic. Known for its strong focus on AI safety and ethics, Claude is designed to be helpful, harmless, and honest. It's used for summarization, writing, Q&A, and coding, with a reputation for a more 'constitutional' approach to AI.",
+        "category": "Chatbot",
+        "upvotes": 0,
+        "url": "https://claude.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/claude.ai",
+        "ceo_team": [
+            "Dario Amodei"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 9,
+        "name": "ElevenLabs",
+        "description": "The leading text-to-speech and voice cloning AI software.",
+        "long_description": "ElevenLabs is a voice technology research company that develops the most realistic and versatile text-to-speech and voice cloning software. Their models can generate natural-sounding speech in any voice and style, making it popular for content creators, developers, and businesses.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://elevenlabs.io/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/elevenlabs.io",
+        "ceo_team": [
+            "Mati Staniszewski",
+            "Piotr Dabkowski"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 10,
+        "name": "Stability AI",
+        "description": "The open-source generative AI company behind Stable Diffusion.",
+        "long_description": "Stability AI is the company behind Stable Diffusion, one of the most popular open-source text-to-image models. They focus on building open AI models across various modalities, including image, language, audio, and video, aiming to make advanced AI accessible to everyone.",
+        "category": "Image",
+        "upvotes": 0,
+        "url": "https://stability.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/stability.ai",
+        "ceo_team": [
+            "Prem Akkaraju"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 11,
+        "name": "RunwayML",
+        "description": "AI-powered video editing and text-to-video generation.",
+        "long_description": "RunwayML is a creative suite of AI-powered tools for video editing, compositing, and generation. Its flagship feature, Gen-2, allows users to generate high-quality video clips from text prompts or existing images.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://runwayml.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/runwayml.com",
+        "ceo_team": [
+            "Crist\u00f3bal Valenzuela"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 12,
+        "name": "Leonardo AI",
+        "description": "AI design platform for image and asset creation.",
+        "long_description": "Leonardo AI is a comprehensive platform for generating and refining AI images and assets. It offers a suite of tools for creating game assets, concept art, and product photography, with fine-grained control over the generation process.",
+        "category": "Image",
+        "upvotes": 0,
+        "url": "https://leonardo.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/leonardo.ai",
+        "ceo_team": [
+            "Leonardo AI Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 13,
+        "name": "PlayHT",
+        "description": "AI text-to-speech engine with ultra-realistic voices.",
+        "long_description": "PlayHT provides ultra-realistic AI voices for text-to-speech applications. It's used by creators and businesses to generate high-quality audio for videos, podcasts, e-learning, and IVR systems, with a focus on natural intonation and emotion.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://play.ht/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/play.ht",
+        "ceo_team": [
+            "PlayHT Team"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 14,
+        "name": "Copilot Studio",
+        "description": "Microsoft's AI customization and automation toolkit.",
+        "long_description": "Microsoft Copilot Studio is a low-code platform for creating and customizing AI-powered copilots (chatbots). It allows organizations to build assistants that can answer questions, automate tasks, and integrate with business data.",
+        "category": "Automation",
+        "upvotes": 0,
+        "url": "https://copilot.microsoft.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/microsoft.com",
+        "ceo_team": [
+            "Satya Nadella (Microsoft)"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 15,
+        "name": "Firefly (Adobe)",
+        "description": "Adobe\u2019s generative AI suite for Photoshop, Illustrator, and video.",
+        "long_description": "Adobe Firefly is a family of creative generative AI models integrated into Adobe's Creative Cloud suite. It allows creators to use text prompts to generate images, create text effects, recolor artwork, and more, directly within apps like Photoshop and Illustrator.",
+        "category": "Image",
+        "upvotes": 0,
+        "url": "https://www.adobe.com/sensei/generative-ai/firefly.html",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/adobe.com",
+        "ceo_team": [
+            "Shantanu Narayen (Adobe)"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 16,
+        "name": "Krea AI",
+        "description": "Real-time AI image generation and style mixing.",
+        "long_description": "Krea AI is known for its real-time AI image generator, which allows users to 'paint' with AI and see results instantly. It's a highly interactive tool for creative exploration, style mixing, and image enhancement.",
+        "category": "Image",
+        "upvotes": 0,
+        "url": "https://krea.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/krea.ai",
+        "ceo_team": [
+            "Krea AI Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 17,
+        "name": "Replit AI",
+        "description": "AI-powered code editing and project generation.",
+        "long_description": "Replit AI is a coding assistant integrated into the Replit online IDE. It helps developers write, debug, and refactor code, explain complex concepts, and even generate entire projects from a single prompt.",
+        "category": "Code",
+        "upvotes": 0,
+        "url": "https://replit.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/replit.com",
+        "ceo_team": [
+            "Amjad Masad"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 18,
+        "name": "Mistral AI",
+        "description": "Open-source focused LLM provider from Europe.",
+        "long_description": "Mistral AI is a Paris-based company focused on developing high-performance, open-source language models. Their models, like Mistral 7B and Mixtral, are known for their efficiency and strong performance, offering a powerful alternative to closed-source models.",
+        "category": "Chatbot",
+        "upvotes": 0,
+        "url": "https://mistral.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/mistral.ai",
+        "ceo_team": [
+            "Arthur Mensch"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 19,
+        "name": "D-ID",
+        "description": "AI talking avatars & video presenters.",
+        "long_description": "D-ID is an AI platform that generates videos of talking avatars from a single image and a text or audio script. It's used to create engaging video content for marketing, training, and communication without the need for cameras or actors.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://www.d-id.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/d-id.com",
+        "ceo_team": [
+            "Gil Perry"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 20,
+        "name": "Synthesia",
+        "description": "Text-to-video AI with talking avatars.",
+        "long_description": "Synthesia is a leading AI video creation platform that allows users to create professional videos with realistic AI avatars and voices in minutes. Users simply type their script, select an avatar, and the platform generates a video, making it ideal for corporate training and marketing.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://www.synthesia.io/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/synthesia.io",
+        "ceo_team": [
+            "Victor Riparbelli"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 21,
+        "name": "Canva AI",
+        "description": "AI design automation inside Canva.",
+        "long_description": "Canva's Magic Studio integrates a suite of AI features directly into its popular design platform. This includes text-to-image generation ('Magic Media'), AI-powered writing ('Magic Write'), and tools to automatically generate presentations or edit photos.",
+        "category": "Design",
+        "upvotes": 0,
+        "url": "https://www.canva.com/ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/canva.com",
+        "ceo_team": [
+            "Melanie Perkins"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 22,
+        "name": "Notion AI",
+        "description": "Writing and organization assistant built into Notion.",
+        "long_description": "Notion AI is an assistant built directly into the Notion workspace. It helps users write and edit text, summarize long documents, brainstorm ideas, translate content, and organize information more efficiently, all within their existing notes and documents.",
+        "category": "Productivity",
+        "upvotes": 0,
+        "url": "https://www.notion.so/ai",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/notion.so",
+        "ceo_team": [
+            "Ivan Zhao"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 23,
+        "name": "Blackbox AI",
+        "description": "AI code search and auto-completion tool.",
+        "long_description": "Blackbox AI is a code generation and search assistant designed for developers. It can answer coding questions, provide code snippets in various languages, and integrate with VS Code to offer powerful auto-completion and problem-solving capabilities.",
+        "category": "Code",
+        "upvotes": 0,
+        "url": "https://blackbox.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/blackbox.ai",
+        "ceo_team": [
+            "Blackbox AI Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 24,
+        "name": "Character.AI",
+        "description": "Chat with AI characters, personalities, and bots.",
+        "long_description": "Character.AI is a unique platform where users can create and interact with AI-powered characters. These characters can be based on fictional figures, historical people, or original creations, allowing for dynamic and creative role-playing and conversation.",
+        "category": "Chatbot",
+        "upvotes": 0,
+        "url": "https://character.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/character.ai",
+        "ceo_team": [
+            "Noam Shazeer",
+            "Daniel De Freitas"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 25,
+        "name": "HeyGen",
+        "description": "AI video generator for avatar-based content.",
+        "long_description": "HeyGen is an AI video platform that specializes in creating engaging videos with generative avatars and voices. It's particularly known for its high-quality lip-syncing and video translation features, allowing creators to dub their videos into other languages.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://www.heygen.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/heygen.com",
+        "ceo_team": [
+            "Joshua Xu"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 26,
+        "name": "Descript",
+        "description": "AI video and audio editing using text.",
+        "long_description": "Descript is an all-in-one editor for video and audio that works like a text document. It automatically transcribes your media, allowing you to edit videos by simply editing the text transcript. It also includes AI features like voice cloning ('Overdub') and filler word removal.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://www.descript.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/descript.com",
+        "ceo_team": [
+            "Andrew Mason"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 27,
+        "name": "Luma AI",
+        "description": "Generate 3D scenes and NeRF models from images.",
+        "long_description": "Luma AI specializes in generating high-quality 3D models and scenes from images or video. Using Neural Radiance Fields (NeRF) technology, it allows users to capture and create photorealistic 3D assets and environments for use in games, VFX, and e-commerce.",
+        "category": "3D",
+        "upvotes": 0,
+        "url": "https://lumalabs.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/lumalabs.ai",
+        "ceo_team": [
+            "Luma AI Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 28,
+        "name": "Pika Labs",
+        "description": "AI video generation and animation creator.",
+        "long_description": "Pika is an AI video generator that can create and edit videos from text and image prompts. It's designed to be a user-friendly tool for creators to quickly generate short video clips, animations, and stylized scenes.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://pika.art/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/pika.art",
+        "ceo_team": [
+            "Demi Guo",
+            "Chenlin Meng"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 29,
+        "name": "Tavily AI",
+        "description": "AI-powered research and browsing API.",
+        "long_description": "Tavily AI provides a specialized search API designed for large language models. It helps AI agents perform research, find relevant information, and browse the web more effectively by providing concise, fact-checked answers with citations.",
+        "category": "Search",
+        "upvotes": 0,
+        "url": "https://tavily.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/tavily.com",
+        "ceo_team": [
+            "Tavily AI Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 30,
+        "name": "Whisper",
+        "description": "OpenAI's advanced speech-to-text transcription model.",
+        "long_description": "Whisper is an automatic speech recognition (ASR) model from OpenAI, trained on a large and diverse dataset of audio. It's known for its exceptional accuracy in transcribing speech from various languages, accents, and noisy environments.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://openai.com/research/whisper",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/openai.com",
+        "ceo_team": [
+            "Sam Altman (OpenAI)"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 31,
+        "name": "Hugging Face",
+        "description": "Platform for open-source machine learning models and datasets.",
+        "long_description": "Hugging Face is a community and platform that provides a vast collection of open-source machine learning models, datasets, and tools. It's the go-to place for developers and researchers to find, share, and collaborate on AI models, especially in natural language processing.",
+        "category": "Platform",
+        "upvotes": 0,
+        "url": "https://huggingface.co/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/huggingface.co",
+        "ceo_team": [
+            "Cl\u00e9ment Delangue"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 32,
+        "name": "Wolfram Alpha",
+        "description": "Computational engine for math, science, and data reasoning.",
+        "long_description": "Wolfram Alpha is a 'computational knowledge engine' that answers factual queries by computing the answer from structured data. It excels at mathematics, science, and data analysis, providing expert-level answers and visualizations rather than just links to web pages.",
+        "category": "Search",
+        "upvotes": 0,
+        "url": "https://www.wolframalpha.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/wolframalpha.com",
+        "ceo_team": [
+            "Stephen Wolfram"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 33,
+        "name": "Grammarly",
+        "description": "AI assistant for writing clarity, grammar, and tone.",
+        "long_description": "Grammarly is an AI-powered writing assistant that helps users improve their writing. It checks for grammar, spelling, and punctuation errors, and also provides suggestions for clarity, tone, and style, making your writing more clear and effective.",
+        "category": "Writing",
+        "upvotes": 0,
+        "url": "https://grammarly.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/grammarly.com",
+        "ceo_team": [
+            "Brad Hoover"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 34,
+        "name": "Rewind AI",
+        "description": "AI memory tool that records and recalls everything you\u2019ve seen and said on your device.",
+        "long_description": "Rewind is an AI-powered tool for macOS that records your screen and audio, making your computer's history completely searchable. It allows you to find anything you've seen, said, or heard, acting as a personal 'memory' for your digital life.",
+        "category": "Productivity",
+        "upvotes": 0,
+        "url": "https://rewind.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/rewind.ai",
+        "ceo_team": [
+            "Dan Siroker"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 35,
+        "name": "Futurepedia",
+        "description": "Largest AI tools directory on the internet.",
+        "long_description": "Futurepedia is one of the largest and most popular directories of AI tools. It curates and categorizes a vast collection of AI applications, making it easy for users to discover new tools for various tasks, from copywriting to video generation.",
+        "category": "Directory",
+        "upvotes": 0,
+        "url": "https://www.futurepedia.io/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/futurepedia.io",
+        "ceo_team": [
+            "Futurepedia Team"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 36,
+        "name": "Gamma App",
+        "description": "Create pitch decks and docs with AI-designed layouts.",
+        "long_description": "Gamma is an AI-powered tool for creating presentations, documents, and webpages. Users can generate a complete, beautifully designed deck or document from a single text prompt, drastically reducing the time spent on formatting and design.",
+        "category": "Productivity",
+        "upvotes": 0,
+        "url": "https://gamma.app/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/gamma.app",
+        "ceo_team": [
+            "Gamma Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 37,
+        "name": "Podcastle",
+        "description": "AI-powered podcast recording and editing platform.",
+        "long_description": "Podcastle is an all-in-one platform for podcast creation, powered by AI. It offers studio-quality recording from your browser, text-based editing, AI-powered audio enhancement ('Magic Dust'), and tools for creating realistic voice clones.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://podcastle.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/podcastle.ai",
+        "ceo_team": [
+            "Artavazd Yeritsyan"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 38,
+        "name": "AIVA",
+        "description": "AI music composer for soundtracks and creative scoring.",
+        "long_description": "AIVA (Artificial Intelligence Virtual Artist) is an AI music composer that creates emotional soundtracks for films, commercials, games, and other creative projects. Users can generate music in various styles or influence the AI by providing their own compositions.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://www.aiva.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/aiva.ai",
+        "ceo_team": [
+            "Pierre Barreau"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 39,
+        "name": "Boomy",
+        "description": "Create and publish songs using AI assistance.",
+        "long_description": "Boomy is an AI-powered music generation tool that allows anyone to create original songs in seconds. Users can choose a genre, let the AI generate a track, and then publish it to major streaming platforms like Spotify and Apple Music.",
+        "category": "Audio",
+        "upvotes": 0,
+        "url": "https://boomy.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/boomy.com",
+        "ceo_team": [
+            "Boomy Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 40,
+        "name": "Veed.io",
+        "description": "Online AI video editor with captioning and automation.",
+        "long_description": "Veed.io is an online video editing platform designed to be simple and accessible. It uses AI to automate tasks like adding subtitles, removing background noise, and creating video templates, making video creation easy for marketers and creators.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://www.veed.io/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/veed.io",
+        "ceo_team": [
+            "Sabba Keynejad"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 41,
+        "name": "Kaiber AI",
+        "description": "AI tool for music video and animation generation.",
+        "long_description": "Kaiber is a creative AI tool that generates videos from text prompts and images. It's particularly popular for creating abstract, artistic, and music-video-style animations with dynamic camera movements and visual effects.",
+        "category": "Video",
+        "upvotes": 0,
+        "url": "https://kaiber.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/kaiber.ai",
+        "ceo_team": [
+            "Kaiber Team"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 42,
+        "name": "Kobold AI",
+        "description": "AI-powered storytelling and roleplay writing assistant.",
+        "long_description": "Kobold AI is an open-source, community-driven AI for writing and role-playing. It's a free-to-use tool that allows users to harness various language models for creative writing, text adventure games, and character-driven chat.",
+        "category": "Writing",
+        "upvotes": 0,
+        "url": "https://koboldai.org/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/koboldai.org",
+        "ceo_team": [
+            "Open Source"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 43,
+        "name": "Jasper AI",
+        "description": "AI copywriting assistant for ads, blogs, and brand content.",
+        "long_description": "Jasper is a leading AI copywriting platform that helps marketing teams and businesses create high-quality content for blogs, social media, advertisements, and websites. It's trained on best-in-class marketing frameworks to produce persuasive and brand-consistent copy.",
+        "category": "Writing",
+        "upvotes": 0,
+        "url": "https://www.jasper.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/jasper.ai",
+        "ceo_team": [
+            "Dave Rogenmoser"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 44,
+        "name": "ChatDOC",
+        "description": "AI that extracts insights from PDFs, books, and research papers.",
+        "long_description": "ChatDOC is an AI tool that allows you to chat with your documents. You can upload PDFs, research papers, or manuals, and then ask questions to quickly find information, get summaries, and extract key insights from the text.",
+        "category": "Productivity",
+        "upvotes": 0,
+        "url": "https://chatdoc.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/chatdoc.com",
+        "ceo_team": [
+            "ChatDOC Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 45,
+        "name": "TutorAI",
+        "description": "Personal AI tutor for learning anything step-by-step.",
+        "long_description": "TutorAI is an AI-powered learning platform that acts as a personal tutor. Users can enter any topic, and the AI will generate a complete course curriculum, including modules, lessons, and quizzes, to help them learn it step-by-step.",
+        "category": "Education",
+        "upvotes": 0,
+        "url": "https://tutorai.me/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/tutorai.me",
+        "ceo_team": [
+            "TutorAI Team"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 46,
+        "name": "QuillBot",
+        "description": "AI paraphrasing and grammar improvement assistant.",
+        "long_description": "QuillBot is a popular AI writing tool known for its paraphraser, which helps users rewrite sentences and paragraphs. It also includes a grammar checker, summarizer, and citation generator to improve the quality and clarity of writing.",
+        "category": "Writing",
+        "upvotes": 0,
+        "url": "https://quillbot.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/quillbot.com",
+        "ceo_team": [
+            "Rohan Gupta"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 47,
+        "name": "MindStudio",
+        "description": "Build custom AI workflows and assistants visually.",
+        "long_description": "MindStudio, by YouAI, is a no-code platform that allows anyone to build and deploy custom AI applications. Users can visually chain together different AI models and data sources to create unique workflows and assistants for specific tasks.",
+        "category": "Automation",
+        "upvotes": 0,
+        "url": "https://mindstudio.ai/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/mindstudio.ai",
+        "ceo_team": [
+            "YouAI Team"
+        ],
+        "pricing": "Freemium",
+        "reviews": []
+    },
+    {
+        "id": 48,
+        "name": "FlowGPT",
+        "description": "Discover, share, and use prompt templates.",
+        "long_description": "FlowGPT is a large community platform for sharing and discovering the best prompts for generative AI models like ChatGPT. Users can find, test, and save prompts for a wide variety of tasks, from marketing to coding.",
+        "category": "Prompts",
+        "upvotes": 0,
+        "url": "https://flowgpt.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/flowgpt.com",
+        "ceo_team": [
+            "FlowGPT Team"
+        ],
+        "pricing": "Free",
+        "reviews": []
+    },
+    {
+        "id": 49,
+        "name": "PromptBase",
+        "description": "Marketplace for buying and selling optimized prompts.",
+        "long_description": "PromptBase is a marketplace for buying and selling high-quality, engineered prompts for models like DALL-E, Midjourney, and GPT. It connects prompt engineers with users who want to get the best possible results from their AI tools.",
+        "category": "Prompts",
+        "upvotes": 0,
+        "url": "https://promptbase.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/promptbase.com",
+        "ceo_team": [
+            "PromptBase Team"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    },
+    {
+        "id": 50,
+        "name": "Superhuman",
+        "description": "AI-powered email experience with speed and automation.",
+        "long_description": "Superhuman is a premium email client designed for speed and productivity. It uses AI to help users sort email, write responses faster, summarize long threads, and manage their inbox with a keyboard-first interface.",
+        "category": "Productivity",
+        "upvotes": 0,
+        "url": "https://superhuman.com/",
+        "voted_by": [],
+        "logo_url": "https://logo.clearbit.com/superhuman.com",
+        "ceo_team": [
+            "Rahul Vohra"
+        ],
+        "pricing": "Paid",
+        "reviews": []
+    }
+]
