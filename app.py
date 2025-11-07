@@ -3,9 +3,15 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 from datetime import datetime
 from urllib.parse import urlparse
+from whitenoise import WhiteNoise
 
 app = Flask(__name__)
 app.secret_key = 'your_super_secret_key_change_this_asap'
+
+app.wsgi_app = WhiteNoise(app.wsgi_app, root=os.path.join(os.path.dirname(__file__), 'static'), prefix='static/')
+
+# Get the database URL from Render's environment variables
+DATABASE_URL = os.environ.get('DATABASE_URL')
 
 # --- Helper Functions for JSON DB ---
 
