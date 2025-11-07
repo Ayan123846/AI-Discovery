@@ -286,7 +286,7 @@ def vote(tool_id):
         tool_to_vote['voted_by'].remove(username)
         voted = False
     else:
-        tool_to__vote['upvotes'] += 1
+        tool_to_vote['upvotes'] += 1
         tool_to_vote['voted_by'].append(username)
         voted = True
         
